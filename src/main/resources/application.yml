@@ -1,0 +1,22 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    mybatis-config:
+      driver-class-name: org.mariadb.jdbc.Driver
+      jdbc-url: jdbc:mariadb://localhost:3306/study
+      username: root
+      password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp
+      suffix: .jsp
+
